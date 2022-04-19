@@ -1,4 +1,4 @@
-## Bienvenido a mi blog personal
+## DaveJuanes - Ingeniero de Sistemas
 
 Soy Ingeniero de Sistemas con experiencia en tecnologias OpenSource durante 4 años, aquí podras encontrar mi experiencia con diferentes herramientas de software. Las tecnologias que utilizo son:
 
