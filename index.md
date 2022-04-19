@@ -1,13 +1,13 @@
 ## DaveJuanes - Ingeniero de Sistemas
 
-Soy Ingeniero de Sistemas con experiencia en tecnologias OpenSource durante 4 años, aquí podras encontrar mi experiencia con diferentes herramientas de software. Las tecnologias que utilizo son:
+Soy Ingeniero de Sistemas con experiencia en tecnologias OpenSource durante 4 años, aquí podras encontrar mi experiencia con diferentes herramientas de software. Las tecnologias que utilizo y con las que mas experiencia tengo son:
 
 - Laravel
 - NodeJS
 - ReactJS
 - PostgreSQL
 
-Entre muchas otras mas, espero que si estas aquí encuentres algo de utilidad. 
+Entre algunas otras mas, espero que si estas aquí encuentres algo de utilidad, el contenido de este blog seran anotaciones recordatorios de uso y aplicacion de herramientas y librerias. 
 
 You can use the [editor on GitHub](https://github.com/davejuanes/davejuanes.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
