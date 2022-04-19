@@ -1,5 +1,14 @@
 ## Bienvenido a mi blog personal
 
+Soy Ingeniero de Sistemas con experiencia en tecnologias OpenSource durante 4 años, aquipodras encontrar mi experiencia con diferentes herramientas de software. Las tecnologias que utilizo son:
+
+- Laravel
+- NodeJS
+- ReactJS
+- PostgreSQL
+
+Entre muchas otras mas, espero que si estas aquí encuentres algo de utilidad. 
+
 You can use the [editor on GitHub](https://github.com/davejuanes/davejuanes.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
