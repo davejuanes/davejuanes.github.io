@@ -1,6 +1,6 @@
 ## Bienvenido a mi blog personal
 
-Soy Ingeniero de Sistemas con experiencia en tecnologias OpenSource durante 4 años, aquipodras encontrar mi experiencia con diferentes herramientas de software. Las tecnologias que utilizo son:
+Soy Ingeniero de Sistemas con experiencia en tecnologias OpenSource durante 4 años, aquí podras encontrar mi experiencia con diferentes herramientas de software. Las tecnologias que utilizo son:
 
 - Laravel
 - NodeJS
