@@ -11,9 +11,25 @@ Soy Ingeniero de Sistemas con experiencia en tecnologias OpenSource durante 4 a�
 
 Entre algunas otras mas, espero que si estas aquí encuentres algo de utilidad, el contenido de este blog seran anotaciones recordatorios de uso y aplicacion de herramientas y librerias. 
 
-You can use the [editor on GitHub](https://github.com/davejuanes/davejuanes.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+### Git y Gihub
+Estar en el mundo del desarrollo de tecnologias en cualquier tipo de rama requiere conocimientos de versionamiento, incluso para poder hacer proyectos propios a contrato o cualquiera es necesario conocer estas herramientas te dejo algunos comando que son los que mas utilizo cada dia...
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- git init -> Inicializa un repositorio
+- git add NombreDeArchivo.txt -> agrega el archivo a la memoria RAM
+- git rm NombreArchivo.txt -> Mantiene el archivo en la memoria RAM
+- git rm --cached NombreArchivo.txt -> elimina el archivo de memoria RAM
+- git commit -m ‘Mensaje’ -> Envía el archivo (os) al repositorio
+- git config --list -> muestra los datos de configuración
+- git config --list --show-origin -> Muestra las configuración con la ubicacion
+- git config --global user.name “David Gonzalo Mercado Juanes”
+- git config --global user.email “davidmercado@correo.com”
+
+Adicionalmente a estos comandos de inicio de proyectos en local y otros que serian una forma de hacer seguimiento a los archivo de tu proyecto o los cambios que hiciste en varios para ver a cuantos archivos afectaste serian los siguiente:
+
+- git log Archivo.txt -> muestra todos los commits del archivo con su ID
+- git diff 5b82d1f2f3ddb1c85b8149d99620912e1ab5678a 1397c0c6fba344b0a72e9647081b22d317e3b83b -> Muestra los cambios entre ambos commits
+- git show Archivo.txt -> Muestra los datos actuales del archivo con autor peso y cambios en el mismo. Se ven cambios atomicos
+
 
 ### Markdown
 
