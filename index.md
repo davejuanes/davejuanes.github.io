@@ -12,7 +12,7 @@ Soy Ingeniero de Sistemas con experiencia en tecnologias OpenSource durante 4 aÃ
 Entre algunas otras mas, espero que si estas aquÃ­ encuentres algo de utilidad, el contenido de este blog seran anotaciones recordatorios de uso y aplicacion de herramientas y librerias. 
 
 ### Git y Github
-![Git y Github](https://camo.githubusercontent.com/38f113b96a368dfb7f634d2f2da97e7b8c748042d2a284b97c3fad048bb3ff55/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f323733322f312a6d74736b3366515f4252656d466964686b656c3364412e706e67)
+![Git y Github](https://pythonforundergradengineers.com/posts/git/images/git_and_github_logo.png)
 Estar en el mundo del desarrollo de tecnologias en cualquier tipo de rama requiere conocimientos de versionamiento, incluso para poder hacer proyectos propios a contrato o cualquiera es necesario conocer estas herramientas te dejo algunos comando que son los que mas utilizo cada dia...
 
 - git init -> Inicializa un repositorio
@@ -39,7 +39,7 @@ Siempre queda el momento para poder ver las ramas y como fue el flujo del proyec
 - git log --all --graph --decorate --online -> nos muestra todo comprimido con ramas cambio ademas de la historia
 
 Ahora bien, este comando es super largo y muy dificil de recordar, para mejorar esto podemos crear un alias del mismo:
-- alias historia="git log --all --graph --decorate --online"
+- [x] alias historia="git log --all --graph --decorate --online"
 
 Prueba el comando, podra ayudarte siempre que tengas comandos largos
 
