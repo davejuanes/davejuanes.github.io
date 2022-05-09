@@ -46,3 +46,16 @@ Finalmente se tiene que enviar los tags al repositorio.
  - git tag -d version1.0 -> Este comando elimina el tag seleccionado
 Esto elimina los tags de manera local, pero para poder eliminarlos de Github usa el siguiente comando:
  - git push origin :refs/tags/version1.0
+
+Para poder ver todas las ramas podemos utilizar:
+- git show-branch -> ramas existentes y su historia
+- git show-branch --all -> que nos muestra todas las ramas con un poco mas de detalle
+- gitk -> si quieres un modo visual para ver como funcionan las cosas
+
+**Desde una buena practica de desarrollo lo mejor es que nosotros creemos branch's o ramas para cada tipo de trabajo que realizemos.**
+
+Genial!, ahora veremos como traer proyectos o clone de otros proyectos **Ojo para proyectos PUBLICOS**
+- git clone URL Http -> clona el repositorio con el nombre del proyecto ojo para hacer un push **Deben estar agregados al repositorio por el propietario**
+
+Una buena practica de toda la vida, es hacer un pull de main o master luego de hacer un push al repositorio.
+
