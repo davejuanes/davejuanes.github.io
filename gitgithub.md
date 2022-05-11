@@ -51,11 +51,66 @@ Para poder ver todas las ramas podemos utilizar:
 - git show-branch -> ramas existentes y su historia
 - git show-branch --all -> que nos muestra todas las ramas con un poco mas de detalle
 - gitk -> si quieres un modo visual para ver como funcionan las cosas
-
 **Desde una buena practica de desarrollo lo mejor es que nosotros creemos branch's o ramas para cada tipo de trabajo que realizemos.**
 
 Genial!, ahora veremos como traer proyectos o clone de otros proyectos **Ojo para proyectos PUBLICOS**
 - git clone URL Http -> clona el repositorio con el nombre del proyecto ojo para hacer un push **Deben estar agregados al repositorio por el propietario**
-
 Una buena practica de toda la vida, es hacer un pull de main o master luego de hacer un push al repositorio.
 
+### Git Rebase
+Es solo para repositorios locales, jamas en un repositorio oficial.
+- git rebase main -> Combina las ramas donde experimentas poniendolos en la linea de vida del proyecto
+Son cambios silenciosos en la vida del proyecto que pueden solucionar conflictos, pero tienes algunos contras que son: nadie sabe como pasaron las cosas, no se sabe en que momento paso, necesariamente se tiene que hacer un rebase a la rama de resolve fixes o experimentos y al final hacer un rebase en la rama master o main.
+
+### Stash
+
+El comando stash nos ayuda a poder almacenar en un lugar temporal los cambios que se tenian previamente. Este sitio temporal puede verse con:
+- git stash list -> Muestra WIP work in progress la rama el ID del ultimo commit y el comentario de este commit
+- git stash pop -> Te devuelve los cambios almacenados en el stash temporal
+
+Ahora, si queremos poner estos cambios temporales en una rama, hay un comando que es otra magia de git:
+- git stash branch nameBranch -> Este comando crea la rama nameBranch y le asigna los cambios stasheados 
+Si tienes cambio no esenciales y stasheas los cambios lo mejor es que pongas en memoria temporal estos y en caso de no funcionar eliminalos, asi como sigue:
+- git stash drop -> Elimina los cambios almacenados en memoria temporal (stash)
+
+### Git Clean: limpiar el proyecto de archivos no deseados
+
+En caso de tener copias no deseadas de un mismo o varios archivos este comando nos ayudara a discrepar los que sirven de los que no, entonces:
+- git clean --dry-run -> nos mostrara un listado de los archivo que seran limpiados del proyecto.
+Pero para ejecutarlo hace falta algo mas:
+- git clean -f -> borrara los archivos
+- git clean -df -> borrara las carpetas no trackeadas
+### Git Cherry pick
+Este nos trae commit viejos al head de un branch.
+- git cherry-pick idCommit -> Esto nos trae el commit del ID a la rama master
+Ojo: Esta es una mala practica pero se puede usar para cambiar el head de cualquier rama
+### Git Reset y Reflog
+El comando reflog lo que hace es mostrarnos todos los cambios en los diferentes HEAD's que pasaron por el tiempo, asi que:
+- git reflog -> lista los HEAD's
+Y cuando queramos traer algun head especifico:
+- git reset HEAD(4) -> traera a staging esos cambios referentes al HEAD
+- git reset --hard idHead -> Con esto todo vuelve a la normalidad!, pero borro lo posterior a este commit
+### Git con amend
+Este comando reconstruye commit de una manera muy util, si tienes un commit y recuerdas que no hiciste algo que era necesario o parte del commit vuelves haces los cambios los guardas y los agregas con add -A o "." luego haces git commit --amend (Remendar), este unira estos ultimos cambios con el ultimo commit.
+- git commit --amend -> agrega los cambios al ultimo commit y te envia a registrar el comentario por si lo requires, no muestra nada mas que el commit.
+### Git Grep y log
+- git grep color -> muestra las palabras en el proyecto
+- git grep -n color -> muestra la palabra con la ruta
+- git grep -c la -> muestra el archivo y la cantidad de veces que usaste la palabra en el archivo
+- git grep -c "<p>" -> busca etiquetas en el codigo
+- git grepo -S cabecera -> Muestra todo lo que tenga que ver con la palabra incluso branchs commit o lo que sea
+
+### Comandos y recursos
+- git shortlog -sn -> muestra cuantos commit hicieron los miembros del proyecto
+- git shortlog -sn --all -> Muestra todos los commit incluso los que fueron borrados
+- git shortlog -sn --all --no-merge -> Commit sin merges
+- git config --global alias.stats "shortlog -sn --all --no-merge" -> Agrega el alias
+ - git blame archivo.html -> muestra a detalle los cambios en el archivo
+ - git blame -c -> muestra a detalle los cambios en el proyecto
+ - git command --help -> abre la documentacion local sobre el comando y su uso
+ - git blame path/archivo.css -L35,53 -c -> este comando nos muestra quien modifico que en el archivo desde la linea 35 a la 53
+ - git branch -r -> muestra las ramas remotas
+ - git branch -a -> muestra todas las ramas
+ Adionalmente Github puede mostrar personas contribuidores, modifcaciones issues resolve fixes entre otros y grafica geniales para enter adicion o eliminacion de codigo en varios tiempos y esto en insight.
+ 
+ Y todo esto gracias al curso de Git y Github Profesional de Platzi!, totalmente recomendable.
