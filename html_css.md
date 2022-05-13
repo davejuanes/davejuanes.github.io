@@ -34,3 +34,10 @@ PNG -> Sin perdida de calidad, la manera correcta de pedir es imagen png con tra
 - SVG -> Sin perdida Vector/Lossless No pierda calidad por nada del mundo mundial.
 ![image](https://user-images.githubusercontent.com/65831379/168197006-8caf2305-e91b-47bf-a558-ae230d6df3cb.png)
 Con esta informacion ya se puede trabajar con diseñadores entendiendo la calidad y la imagen adecuada para los istios web.
+
+### Optimizacion de Imagenes
+El peso ideal de una imagen para una web es de 100 a 70 kb, para esto es recomendable considerar las siguientes paginas:
+1. Tiny PNG Esta pagina comprime las imagenes intentado no perder calidad
+2. Verexif Esta elimina los metadatos que agregan un peso extra al final
+Una pagina muy recomendable de imagenes gratis es:
+- pexels.com
