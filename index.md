@@ -15,9 +15,9 @@ Entre algunas otras mas, espero que si estas aquí encuentres algo de utilidad, 
 [Guia de Git y Github para tus proyectos](gitgithub.md)
 ![Git y Github](https://pythonforundergradengineers.com/posts/git/images/git_and_github_logo.png)
 
-###HTML CSS
+### HTML CSS
 [Guía de HTML y CSS](html_css.md)
-![HTML y CSS](https://raw.githubusercontent.com/diegoAlex24/HTML-CSS-examples/master/html-css-logo.jpg)
+![HTML y CSS](https://julioruiz.cl/media/2015/01/HTML5-CSS31-1.png)
 
 ### Github Pages - Markdown
 
