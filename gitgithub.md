@@ -31,6 +31,34 @@ Ahora bien, este comando es super largo y muy dificil de recordar, para mejorar 
 
 Prueba el comando, podra ayudarte siempre que tengas comandos largos
 
+### Traer cambios de otras ramas
+
+Para volver a otras versiones del proyecto o commits utiliza el comando “reset”, como esta a continuación:
+
+- git reset idCommit --soft -> cambios suaves
+- git reset idCommit --hard -> cambios fuertes o totales
+
+** Git reset elimina todos los otros commit que se hicieron **
+
+- git log stat -> muestra los cambios con en el en bits
+- git checkout idCommit Archivo.txt -> muestra el archivo en ese commit
+- git checkout master Archivo.txt -> muestra el archivo de esa rama
+- git log --stat -> nos muestra los cambios modificados con el peso de los mismos
+
+### Git reset vs git rm
+
+#### git rm
+Estos comando son similares pero tiene funcionalidades muy diferentes:
+- git rm --cached Archivo.txt -> Nos elimina el archivo del Staging, le dice a git que deje de tracker el archivo pero el archivo sigue en el equipo
+- git rm --force Archivo.txt -> Nos eliminar el archivo del disco duro y de git
+
+#### git reset
+Este comando nos ayuda a volver en el tiempo, volvemos a versiones anteriores pero sin posibilidad de volver en el futuro (git checkout si)
+- git reset --soft -> Borramos el historial de Git pero guardamos los cambios que hay en Staging para un nuevo commit.
+- git reset --hard -> Borra todo, absolutamente todo.
+- git reset HEAD -> Evita el envío de los archivos en Staging al último commit a menos que así lo deseemos
+
+
 ### Marcar versiones en el proyecto
 Para poder marcar un commit como un punto de version del proyecto puedes utilizar el comando "tag", es bastante util cuando quieres definir los cambios en el proyecto pero continuar en el mismo:
 
@@ -112,5 +140,24 @@ Este comando reconstruye commit de una manera muy util, si tienes un commit y re
  - git branch -r -> muestra las ramas remotas
  - git branch -a -> muestra todas las ramas
  Adionalmente Github puede mostrar personas contribuidores, modifcaciones issues resolve fixes entre otros y grafica geniales para enter adicion o eliminacion de codigo en varios tiempos y esto en insight.
+ 
+### Resumen de lo aprendido
+- git clone url -> clona la versión master o main del repositorio
+- git add -> Prepara los cambios del directorio a la preparación o Staging
+- git commit -> Envía los cambios al repositorio local
+- git push -> Envía los cambios al repositorio remoto
+- git fetch -> Trae los últimos cambios
+- git merge -> Combina cambios entre ramas
+- git pull -> Fusiona fetch y merge en el repositorio local
+
+### Ramas o Branch’s
+- git branch newBranch -> crea la nueva rama
+- git checkout nameBranch -> cambia de rama
+- git merge nameBranch -> combina la rama local con la del parametro
+- git remote add origin URL -> direcciona el repositorio a un repositorio de servidor
+- git remote -v -> muestra los repositorios donde seran enviados los cambios
+- git push origin main -> empuja los cambios al repositorio
+- git pull origin nameBranch -> combina las ramas a la local
+- git pull origin main --allow-unrelated-histories -> combina las ramas con README o archivos creados por defecto en el repositorio
  
  Y todo esto gracias al curso de Git y Github Profesional de Platzi!, totalmente recomendable.
