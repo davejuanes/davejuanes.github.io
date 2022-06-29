@@ -45,6 +45,25 @@ Para volver a otras versiones del proyecto o commits utiliza el comando “reset
 - git checkout master Archivo.txt -> muestra el archivo de esa rama
 - git log --stat -> nos muestra los cambios modificados con el peso de los mismos
 
+### Llaves publicas y llaves privadas
+Estas se crean y se vinculan matematicamente para poder mostrar el contenido
+Los comando para utlizar las llaves son:
+Para generar una llave ssh en windows y linux se usa el siguiente comando:
+- ssh-keygen -t rsa -b 4096 -C “emailGithub”
+Para verificar que se este ejecutanto el agente ssh en la maquina se usa el siguiente comando:
+- eval $(ssh-agent -s)
+Las llaves se almacenan por defecto en la ruta home de los usuarios (c/user/nameuser/.ssh) por lo tanto se tiene que ubicar en esta ruta mediante el acortador ~:
+- cd ~
+Finalmente para decirle al agent que utilize nuestra llave ssh:
+- ssh-add ~/.ssh/id_rsa
+
+### Configuración del proyecto con SSH
+Luego de crear la llave ya configurar el repositorio local, se tiene que agregar la llave en el repositorio de Github o Gitlab, para esto en settings -> SSH and GPG Keys -> agregamos nueva llame definimos un nombre y pegamos la llave publica generada en el repositorio, Github pedira que confirmemos con el password y listo!. Ahora nos toca configurar el proyecto para que el origin sea en base a SSH
+- git remote -v -> nos muestra el origin y destino del proyecto
+- git remote set-url origin ‘ruta ssh del repositorio’
+- git remote -v -> ya nos mostrara la nueva ruta de origin del proyecto
+
+
 ### Git reset vs git rm
 
 #### git rm
