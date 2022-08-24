@@ -19,6 +19,10 @@ Entre algunas otras mas, espero que si estas aquí encuentres algo de utilidad, 
 [Guía de HTML y CSS](html_css.md)
 ![HTML y CSS](https://julioruiz.cl/media/2015/01/HTML5-CSS31-1.png)
 
+### NPM
+[Guía de NPM](npm.md)
+![NPM](https://codigoonclick.com/wp-content/uploads/2019/05/npm-nodejs.jpeg)
+
 ### Github Pages - Markdown
 
 Esta pagina la tengo gracias a Github Pages y a Markdown, aquí abajo te dejo algunas guias para que tu puedas hacerlo también.
